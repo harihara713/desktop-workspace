@@ -1,0 +1,61 @@
+# Mako notification daemon configuration
+
+# ─────────────────────────────────────────────
+# General
+# ─────────────────────────────────────────────
+
+sort=-time
+layer=overlay
+
+width=360
+height=120
+
+font=JetBrainsMono Nerd Font 11 
+
+background-color=#303030
+text-color=#F8F8FF
+
+border-size=1
+border-color=#00D4FF
+border-radius=8
+
+padding=12
+margin=10
+
+# Icons
+icons=1
+max-icon-size=48
+
+default-timeout=5000
+ignore-timeout=1
+
+# Dismiss notification with right click
+on-button-right=dismiss
+
+# Dismiss notification by touching it
+on-touch=dismiss
+
+# ─────────────────────────────────────────────
+# Urgency
+# ─────────────────────────────────────────────
+
+# Low — muted purple
+[urgency=low]
+border-color=#C4A7E7
+
+# Normal — cyan accent
+[urgency=normal]
+border-color=#00D4FF
+
+# High — bright red
+[urgency=high]
+border-color=#FF5555
+default-timeout=0
+
+# ─────────────────────────────────────────────
+# MPD
+# ─────────────────────────────────────────────
+
+[category=mpd]
+default-timeout=2000
+group-by=category
